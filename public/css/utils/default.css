@@ -1,0 +1,15 @@
+/* line 1, ../../sass/utils/default.scss */
+body, div, aside, article, ul, li, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../../sass/utils/default.scss */
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+/* line 8, ../../sass/utils/default.scss */
+ul, li {
+  list-style-type: none;
+}

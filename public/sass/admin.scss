@@ -1,0 +1,89 @@
+@import './utils/variables';
+
+.#{$admin}-aside-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: $admin-aside-width;
+	height: 100%;
+	padding-top: 50px;
+	background-color: $aside-black-lighter;
+}
+.user-avatar {
+	position: relative;
+	width: 100%;
+	padding-left: 1em;
+	a {
+		position: relative;
+		width: 48px;
+		height: 48px;
+		margin: auto;
+		display: inline-block;
+		border-radius: 48px;
+		text-align: center;
+		background: url('../images/avatar.jpg') top center no-repeat;
+		background-size: cover;
+	}
+	.userinfo {
+		position: absolute;
+		top: 12px;
+		left: 70px;
+		display: inline-block;
+		color: $white;
+	}
+}
+.searchForm {
+	width: 100%;
+	padding-top: 1.1em;
+	text-align: center;
+
+	input[type='search']:focus,
+	input[type='search']:focus + .search-btn
+	{
+			background-color: $white;
+	}
+	.input-group {width: 100%;}
+	.search-input {
+		width: 75%;
+		padding: 8px 5px;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		outline: none;
+		border: 0px solid transparent;
+		background-color: #666;
+	}
+	.search-btn {
+		height: 34px;
+		border: 1px solid transparent;
+		background-color: #666;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
+.aisde-list-group {
+	padding-top: 1em;
+	width: 100%;
+	li, a {
+		width: 100%;
+	}
+	a {
+		display: inline-block;
+		padding: 10px 5px;
+		line-height: 1.5;
+		text-indent: 8px;	
+		letter-spacing: 3px;
+		color: $white;
+		transition: background-color .5s;
+		&:hover {
+			border-left: 2px solid $gray-white;
+			background-color: $aside-iteem-hover;
+		}
+	}
+	.actived-item {
+		border-left: 2px solid $gray-white;
+		background-color: $aside-iteem-hover;
+	}
+}

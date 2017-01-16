@@ -1,0 +1,104 @@
+/* line 3, ../sass/admin.scss */
+.admin-aside-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 190px;
+  height: 100%;
+  padding-top: 50px;
+  background-color: #222d32;
+}
+
+/* line 13, ../sass/admin.scss */
+.user-avatar {
+  position: relative;
+  width: 100%;
+  padding-left: 1em;
+}
+/* line 17, ../sass/admin.scss */
+.user-avatar a {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  display: inline-block;
+  border-radius: 48px;
+  text-align: center;
+  background: url("../images/avatar.jpg") top center no-repeat;
+  background-size: cover;
+}
+/* line 28, ../sass/admin.scss */
+.user-avatar .userinfo {
+  position: absolute;
+  top: 12px;
+  left: 70px;
+  display: inline-block;
+  color: #fff;
+}
+
+/* line 36, ../sass/admin.scss */
+.searchForm {
+  width: 100%;
+  padding-top: 1.1em;
+  text-align: center;
+}
+/* line 41, ../sass/admin.scss */
+.searchForm input[type='search']:focus,
+.searchForm input[type='search']:focus + .search-btn {
+  background-color: #fff;
+}
+/* line 46, ../sass/admin.scss */
+.searchForm .input-group {
+  width: 100%;
+}
+/* line 47, ../sass/admin.scss */
+.searchForm .search-input {
+  width: 75%;
+  padding: 8px 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  border: 0px solid transparent;
+  background-color: #666;
+}
+/* line 58, ../sass/admin.scss */
+.searchForm .search-btn {
+  height: 34px;
+  border: 1px solid transparent;
+  background-color: #666;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 66, ../sass/admin.scss */
+.aisde-list-group {
+  padding-top: 1em;
+  width: 100%;
+}
+/* line 69, ../sass/admin.scss */
+.aisde-list-group li, .aisde-list-group a {
+  width: 100%;
+}
+/* line 72, ../sass/admin.scss */
+.aisde-list-group a {
+  display: inline-block;
+  padding: 10px 5px;
+  line-height: 1.5;
+  text-indent: 8px;
+  letter-spacing: 3px;
+  color: #fff;
+  transition: background-color .5s;
+}
+/* line 80, ../sass/admin.scss */
+.aisde-list-group a:hover {
+  border-left: 2px solid #eee;
+  background-color: #1e282c;
+}
+/* line 85, ../sass/admin.scss */
+.aisde-list-group .actived-item {
+  border-left: 2px solid #eee;
+  background-color: #1e282c;
+}
