@@ -89,7 +89,7 @@
 	}
 }
 .topbar {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -101,4 +101,24 @@
 	color: #FFF;
 	background-color: $cornflowerblue;
 	z-index: 1;
+
+	.glyphicon-bell, .glyphicon-envelope, .glyphicon-th-list {
+		position: absolute;
+		top: 15px;
+	}
+	.glyphicon-th-list {
+		right: 15px;
+	}
+	.glyphicon-envelope {
+		right: 55px;
+	}
+	.glyphicon-bell {
+		right: 85px;
+	}
+}
+.content {
+	width: 100%;
+	margin-left: 190px;
+	padding-left: 15px;
+	padding-top: 15px;
 }

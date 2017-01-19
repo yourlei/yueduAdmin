@@ -119,7 +119,7 @@
 
 /* line 91, ../sass/admin.scss */
 .topbar {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -130,4 +130,29 @@
   color: #FFF;
   background-color: #6495ed;
   z-index: 1;
+}
+/* line 105, ../sass/admin.scss */
+.topbar .glyphicon-bell, .topbar .glyphicon-envelope, .topbar .glyphicon-th-list {
+  position: absolute;
+  top: 15px;
+}
+/* line 109, ../sass/admin.scss */
+.topbar .glyphicon-th-list {
+  right: 15px;
+}
+/* line 112, ../sass/admin.scss */
+.topbar .glyphicon-envelope {
+  right: 55px;
+}
+/* line 115, ../sass/admin.scss */
+.topbar .glyphicon-bell {
+  right: 85px;
+}
+
+/* line 119, ../sass/admin.scss */
+.content {
+  width: 100%;
+  margin-left: 190px;
+  padding-left: 15px;
+  padding-top: 15px;
 }
