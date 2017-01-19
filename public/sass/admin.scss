@@ -1,4 +1,5 @@
 @import './utils/variables';
+@import './utils/extend';
 
 .#{$admin}-aside-wrap {
 	position: fixed;
@@ -7,7 +8,7 @@
 	bottom: 0;
 	width: $admin-aside-width;
 	height: 100%;
-	padding-top: 50px;
+	padding-top: 55px;
 	background-color: $aside-black-lighter;
 }
 .user-avatar {
@@ -86,4 +87,18 @@
 		border-left: 2px solid $gray-white;
 		background-color: $aside-iteem-hover;
 	}
+}
+.topbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $topHeight;
+	@extend .flex;
+	align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #FFF;
+	background-color: $cornflowerblue;
+	z-index: 1;
 }
