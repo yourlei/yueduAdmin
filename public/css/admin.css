@@ -98,26 +98,52 @@
 }
 /* line 73, ../sass/admin.scss */
 .aisde-list-group a {
+  position: relative;
   display: inline-block;
   padding: 10px 5px;
   line-height: 1.5;
   text-indent: 8px;
   letter-spacing: 3px;
   color: #fff;
-  transition: background-color .5s;
+  border-left: 2px solid transparent;
+  transition: all .5s;
 }
-/* line 81, ../sass/admin.scss */
+/* line 84, ../sass/admin.scss */
 .aisde-list-group a:hover {
-  border-left: 2px solid #eee;
+  border-left-color: #6495ed;
   background-color: #1e282c;
 }
-/* line 86, ../sass/admin.scss */
+/* line 88, ../sass/admin.scss */
+.aisde-list-group a .glyphicon-plus-sign {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+}
+/* line 94, ../sass/admin.scss */
+.aisde-list-group .second-items {
+  background-color: #555;
+  display: none;
+}
+/* line 97, ../sass/admin.scss */
+.aisde-list-group .second-items a {
+  color: #CCC;
+  padding-left: 10px;
+  transition: color .5s;
+}
+/* line 101, ../sass/admin.scss */
+.aisde-list-group .second-items a:hover {
+  color: #fff;
+  border-left-color: transparent;
+  background-color: #555;
+}
+/* line 108, ../sass/admin.scss */
 .aisde-list-group .actived-item {
-  border-left: 2px solid #eee;
+  border-left-color: #6495ed;
   background-color: #1e282c;
 }
 
-/* line 91, ../sass/admin.scss */
+/* fix top banner */
+/* line 114, ../sass/admin.scss */
 .topbar {
   position: relative;
   top: 0;
@@ -131,25 +157,25 @@
   background-color: #6495ed;
   z-index: 1;
 }
-/* line 105, ../sass/admin.scss */
+/* line 128, ../sass/admin.scss */
 .topbar .glyphicon-bell, .topbar .glyphicon-envelope, .topbar .glyphicon-th-list {
   position: absolute;
   top: 15px;
 }
-/* line 109, ../sass/admin.scss */
+/* line 132, ../sass/admin.scss */
 .topbar .glyphicon-th-list {
   right: 15px;
 }
-/* line 112, ../sass/admin.scss */
+/* line 135, ../sass/admin.scss */
 .topbar .glyphicon-envelope {
   right: 55px;
 }
-/* line 115, ../sass/admin.scss */
+/* line 138, ../sass/admin.scss */
 .topbar .glyphicon-bell {
   right: 85px;
 }
 
-/* line 119, ../sass/admin.scss */
+/* line 142, ../sass/admin.scss */
 .content {
   margin-left: 190px;
   padding-left: 15px;

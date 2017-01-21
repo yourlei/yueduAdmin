@@ -71,23 +71,46 @@
 		width: 100%;
 	}
 	a {
+		position: relative;
 		display: inline-block;
 		padding: 10px 5px;
 		line-height: 1.5;
 		text-indent: 8px;	
 		letter-spacing: 3px;
 		color: $white;
-		transition: background-color .5s;
+		border-left: 2px solid transparent;
+		transition: all .5s;
+
 		&:hover {
-			border-left: 2px solid $gray-white;
+			border-left-color: $cornflowerblue;
 			background-color: $aside-iteem-hover;
+		}
+		.glyphicon-plus-sign {
+			position: absolute;
+			top: 14px;
+			right: 10px;
+		}
+	}
+	.second-items {
+		background-color: $black-gray;
+		display: none;
+		a {
+			color: #CCC;
+			padding-left: 10px;
+			transition: color .5s;
+			&:hover {
+				color: $white;
+				border-left-color: transparent;
+				background-color: $black-gray;
+			}
 		}
 	}
 	.actived-item {
-		border-left: 2px solid $gray-white;
+		border-left-color: $cornflowerblue;
 		background-color: $aside-iteem-hover;
 	}
 }
+/* fix top banner */
 .topbar {
 	position: relative;
 	top: 0;
