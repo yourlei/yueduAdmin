@@ -1,1 +1,1 @@
-user.js
+var mongoose = require('mongoose');
