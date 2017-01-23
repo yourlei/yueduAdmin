@@ -8,18 +8,18 @@
 					<i>or&nbsp</i> 
 					<a href="/signup" class="current">Sign up</a>
 				</div>
-				<form action="" class="form-horizontal" role="form">
+				<form method="POST" action="/signup" class="form-horizontal" role="form">
 					<div class="form-group">
 						<span class="glyphicon glyphicon-user icon-user"></span>
-						<input type="text" placeholder="username" name="user[name]" class="username">
+						<input type="text" placeholder="username" name="user[name]" autocomplete="false" class="username">
 					</div>
 					<div class="form-group">
 						<span class="glyphicon glyphicon-envelope icon-user"></span>
-						<input type="text" placeholder="email address" name="user[email]" class="username" maxlength="10">
+						<input type="text" placeholder="email address" name="user[email]" autocomplete="false" class="username" maxlength="10">
 					</div>
 					<div class="form-group">
 						<span class="glyphicon glyphicon-lock icon-lock"></span>
-						<input type="password" placeholder="Password" class="passwd">
+						<input type="password" placeholder="Password" name="user[password]" autocomplete="false" class="passwd">
 					</div>
 					<div class="form-group">
 						<button type="submit" class="btn btn-default" id="login">Sign up</button>
